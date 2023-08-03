@@ -4,12 +4,14 @@
   "description": "Logo Creator",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "inquirer": "^8.2.6",
     "node": "^20.5.0"
   }
 }
