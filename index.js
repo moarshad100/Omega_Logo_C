@@ -9,11 +9,33 @@ const questions = [
 	"Enter the Shape color: ",
 	];
 
+
+
+const writeToFile = function(){
+	fs.writeFile("hello.txt","hello",err=>{
+		if(err){
+			console.log("error");
+		}
+	});
+}
+
+
+var userPrompt = function(){
+
 inquirer.prompt([
 	{
 	type:'input',
 	message:questions[0],
-	name:'letters'
+	name:'letters',
+	validate:(response)=>{
+		if(response.length>3){
+			return console.log(" Please enter only three letters")
+		}
+		else
+		{
+			return true;
+		}
+	}
 	},
 
 	{
@@ -32,9 +54,15 @@ inquirer.prompt([
 	message:questions[3],
 	name:'shape_color'
 	}
-	
-
 	])
-	.then((response)=>
-		console.log(response));
+	.then((response)=>{
+		if(response.letters.length>3){
+			console.log("length<2");
+		}	
+	});
+}
 
+
+
+
+userPrompt();
