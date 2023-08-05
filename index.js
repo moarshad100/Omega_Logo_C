@@ -1,5 +1,6 @@
 const fs = require('fs');
 const inquirer = require('inquirer');
+const shape = require('./assets/shapes.js')
 
 
 const questions = [
@@ -8,6 +9,7 @@ const questions = [
 	"Select the shape: ",
 	"Enter the Shape color: ",
 	];
+
 
 
 
@@ -58,7 +60,14 @@ inquirer.prompt([
 	.then((response)=>{
 		if(response.letters.length>3){
 			console.log("length<2");
-		}	
+		}
+
+
+		if(response.shape === "circle"){
+			let selectShape = new Shape;
+			selectShape.Circle;
+		}
+	
 	});
 }
 
