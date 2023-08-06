@@ -3,6 +3,8 @@ const inquirer = require('inquirer');
 const shape = require('./assets/shapes.js')
 
 
+
+// List of questions
 const questions = [
 	"Please enter three letters: ",
 	"Enter the text color: ",
@@ -13,12 +15,8 @@ const questions = [
 
 
 
-
+// Write to file function
 const writeToFile = function(data){
-
-	
-
-
 
 	const shape_choice = new shape(
 	data.shape_color,
@@ -67,6 +65,7 @@ const writeToFile = function(data){
 }
 
 
+//Inquirer Prompt function
 var userPrompt = function(){
 
 inquirer.prompt([
