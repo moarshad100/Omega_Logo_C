@@ -23,5 +23,5 @@
   ## Contact
   * [E-mail]mo.arshad100@gmail.com
   * [Github]https://github.com/moarshad100
-  * [Video] <video src='./assets/SVG_logo.webm' width=180/>
+  * [Video] https://github.com/moarshad100/Omega_Logo_C/blob/main/assets/SVG_logo.webm
 
