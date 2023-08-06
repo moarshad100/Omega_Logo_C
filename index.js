@@ -38,7 +38,7 @@ const writeToFile = function(data){
 
 	else if(data.shape === 'circle'){
 
-		svg_shape = `<circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="${shape_choice.color}" />`
+		svg_shape = `<circle cx="150" cy="100" r="85" stroke="black" stroke-width="3" fill="${shape_choice.color}" />`
 		
 	}
 
@@ -47,7 +47,7 @@ const writeToFile = function(data){
 					<svg width="300" height="200" 
      				xmlns="http://www.w3.org/2000/svg" version="1.1">
      				${svg_shape} 
-     				<text x="150" y="100" fill="${data.text_color}">${data.letters}</text>					
+     				<text x="140" y="100" fill="${data.text_color}">${data.letters}</text>					
 					</svg>`
 
 

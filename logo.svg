@@ -1,6 +1,6 @@
 <?xml version="1.0" standalone="no"?>
 					<svg width="300" height="200" 
      				xmlns="http://www.w3.org/2000/svg" version="1.1">
-     				<polygon points="0,200 150,0 300,200" style="fill:black;stroke:purple;stroke-width:1" /> 
-     				<text x="150" y="100" fill="white">FAT</text>					
+     				<circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="#BD4B33" /> 
+     				<text x="150" y="100" fill="black">FAT</text>					
 					</svg>
